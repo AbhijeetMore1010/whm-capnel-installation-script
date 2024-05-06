@@ -2,20 +2,20 @@
  This script automates cPanel/WHM installation on Linux servers. It adapts commands for Red Hat/CentOS and Debian/Ubuntu, manages packages, services, and firewall settings. With logging for error tracking, it simplifies setup while ensuring compatibility, efficiency, and ease of use.
 
 
-1.Get or pull this file (rocky_whm.sh)  
-2.Give it executable permissions (chmod +x rocky_whm.sh)   
-3.Then run it (./rocky_whm.sh)  
+1.Get or pull this file (install.sh)  
+2.Give it executable permissions (chmod +x install.sh)   
+3.Then run it (./install.sh)  
 
   
 Alternative methods:
 
 You can't git it 
 1. create file name
-   vi rocky-whm.sh enable insert mode
+   vi install.sh enable insert mode
    past .sh file code Done...
 2. Run Simaple command
-    .Give it executable permissions (chmod +x rocky_whm.sh)
-     Then run it (./rocky_whm.sh)
+    .Give it executable permissions (chmod +x install.sh)
+     Then run it (./install.sh)
 
 
 This script seems to be a setup script for configuring a Rocky Linux server, particularly for hosting purposes with WHM (Web Host Manager) involvement. Here's an overview of what each part does:
