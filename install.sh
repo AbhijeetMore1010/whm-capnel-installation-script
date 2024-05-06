@@ -64,6 +64,8 @@ if [ -f /etc/redhat-release ]; then
     update_cmd="yum update -y"
     install_cmd="yum install -y"
     services_cmd="service"
+    # Import AlmaLinux GPG key
+    rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
 elif [ -f /etc/debian_version ]; then
     # Debian or Ubuntu
     update_cmd="apt-get update -y"
