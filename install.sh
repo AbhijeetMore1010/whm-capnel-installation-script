@@ -39,10 +39,29 @@ resolve_error() {
     # Add logic here to resolve specific errors automatically if possible
 }
 
+# Function for displaying progress notification every 5 minutes
+display_progress_notification() {
+    local current_time
+    current_time=$(date '+%Y-%m-%d %H:%M:%S')
+    echo "[$current_time] Installation is in progress. Please wait..."
+}
+
+# Function to check if cPanel/WHM is already installed
+check_cpanel_installed() {
+    if [ -e /usr/local/cpanel/cpanel ]; then
+        echo "cPanel/WHM is already installed on this system."
+        echo "You can access WHM using the following URL: https://$(hostname -I | cut -d' ' -f1):2087"
+        exit 0
+    fi
+}
+
 # Check if script is run as root
 if [ "$(id -u)" -ne 0 ]; then
     handle_error "This script must be run as root"
 fi
+
+# Check if cPanel/WHM is already installed
+check_cpanel_installed
 
 # Display JustFlyHost.com in ASCII art or text
 display_ascii_art
