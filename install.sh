@@ -1,7 +1,7 @@
 #!/bin/bash
 # cPanel/WHM Installation Script
 # This script installs cPanel/WHM on supported Linux distributions
-# Adjusted for JustFlyHost by [Your Name]
+# Adjusted for JustFlyHost by abhijeetmore
 # Licensed under the JustFlyHost Team License 2.0
 
 # Function to display JustFlyHost.com in ASCII art
